@@ -19,10 +19,8 @@ Mandatory rules loaded during all code writing tasks:
 
 ## Installation
 
-Copy or symlink the skill directory into `~/.claude/skills/`:
-
 ```bash
-ln -s /path/to/skills/ai-coding-discipline ~/.claude/skills/ai-coding-discipline
+npx skills luoling8192/ai-coding-discipline-skill
 ```
 
 ## License
