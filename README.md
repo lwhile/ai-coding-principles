@@ -1,12 +1,12 @@
-# AI Coding Discipline Skills
+# Claude Code Skills
 
-A collection of Claude Code skills that enforce coding discipline and prevent common AI coding anti-patterns.
+A collection of Claude Code skills for coding discipline and system design knowledge.
 
 ## Skills
 
 ### [ai-coding-discipline](./ai-coding-discipline/SKILL.md)
 
-Mandatory rules loaded during all code writing tasks:
+Mandatory rules loaded during all code writing tasks that prevent common AI coding anti-patterns.
 
 | # | Rule | Summary |
 |---|------|---------|
@@ -17,10 +17,20 @@ Mandatory rules loaded during all code writing tasks:
 | 5 | Red-Green Testing (TDD) | Write failing test first, then fix |
 | 6 | Don't Remove Debug Logs During Fix | Logs stay until human confirms the fix works |
 
+### [ddia-principles](./ddia-principles/SKILL.md)
+
+Distilled reference guide based on Martin Kleppmann's *Designing Data-Intensive Applications*. Loaded when designing database schemas, choosing storage engines, implementing replication/partitioning, handling distributed transactions, or building batch/stream processing pipelines.
+
+| Part | Topics |
+|------|--------|
+| I: Foundations | Reliability, Scalability, Maintainability; Data Models & Query Languages; Storage & Retrieval (B-tree vs LSM-tree, OLTP vs OLAP); Encoding & Evolution |
+| II: Distributed Data | Replication (single/multi-leader, leaderless); Partitioning (key-range, hash, compound); Transactions & Isolation Levels; Distributed System Challenges; Consistency & Consensus |
+| III: Derived Data | Batch Processing (MapReduce, Spark, Flink); Stream Processing (Kafka, CDC, Event Sourcing); Data Integration Patterns |
+
 ## Installation
 
 ```bash
-npx skills luoling8192/ai-coding-discipline-skill
+npx skills luoling8192/ai-coding-principles
 ```
 
 ## License
